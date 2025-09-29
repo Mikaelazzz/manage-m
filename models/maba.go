@@ -4,7 +4,7 @@ import (
 	"time"
 )
 
-// Maba merepresentasikan data mahasiswa
+// Maba data mahasiswa
 type Maba struct {
 	ID        int       `json:"id"`
 	Nama      string    `json:"nama"`
@@ -14,7 +14,7 @@ type Maba struct {
 	UpdatedAt time.Time `json:"updated_at"`
 }
 
-// NewMaba adalah konstruktor untuk membuat instance Maba
+// NewMaba adalah untuk membuat data baru Maba
 func NewMaba(id int, nama, nim, jurusan string) *Maba {
 	now := time.Now()
 	return &Maba{
